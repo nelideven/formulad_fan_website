@@ -75,7 +75,7 @@ function do_redirect(href) {
         window.location.href = href; // navigate after fade out
         setTimeout(() => {
             document.body.style.opacity = 1; // fade in effect on new page
-        }, 5000); // small delay to ensure new page has loaded
+        }, 2000); // small delay to ensure new page has loaded
     }, 500); // match the CSS transition duration
 }
 
