@@ -1,0 +1,436 @@
+<!--
+    Formula Drift Fan Project, (C) 2026 Nyoman Raden
+    This webpage is "free software": you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This webpage is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this webpage source. If not, see <https://www.gnu.org/licenses/>.
+
+    External media (images, videos) are courtesy of Formula Drift Holdings LLC
+    and remain their property. All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Drift - Drivers</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio" rel="stylesheet"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button id="menu-toggle">☰</button>
+    <header>
+        <nav>
+            <img src="https://www.formulad.com/images/assets/logo.svg" alt="Formula Drift Logo"/>
+            <ul>
+                <li><a onclick="do_redirect(this.href)" href="index.html">Home</a></li>
+                <li><a class="active" href="#">Drivers</a></li>
+                <li><a onclick="do_redirect(this.href)" href="events.html">Events</a></li>
+                <li><a onclick="do_redirect(this.href)" href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="padding" id="driverlist">
+            <h1 class="page-title center-title">2026 PRO DRIVERS LIST</h1>
+            <div class="driver-grid">
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/james-deane')"
+                    onmouseenter="show_overlay(130, event)" onmouseleave="hide_overlay(130)">
+                    <div class="driver-number">130</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/JamesDeane-portrait.png" alt="James Deane">
+                    <div class="driver-info">
+                        <h3>James Deane</h3>
+                        <p>RTR Vehicles Drift Team | O'Reilly Pennzoil Ford Mustang RTR Spec 5-FD</p>
+                        <span class="country-tag">Ireland</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="130">
+                    <p>5x FD Champion, back-to-back with RTR in 2025.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/JamesDeane-vehicle_image.jpg" alt="James Deane Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/matt-field')"
+                    onmouseenter="show_overlay(777, event)" onmouseleave="hide_overlay(777)">
+                    <div class="driver-number">777</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/MattField-portrait.png" alt="Matt Field">
+                    <div class="driver-info">
+                        <h3>Matt Field</h3>
+                        <p>Drift Cave Motorsports | Borla Performance GT Radial Corvette</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="777">
+                    <p>Aggressive “OG” of FD, 2025 runner-up and Evergreen Speedway winner.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/MattField-vehicle_image.jpg" alt="Matt Field Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/chris-forsberg')"
+                    onmouseenter="show_overlay(64, event)" onmouseleave="hide_overlay(64)">
+                    <div class="driver-number">64</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/ChrisForsberg-portrait.png" alt="Chris Forsberg">
+                    <div class="driver-info">
+                        <h3>Chris Forsberg</h3>
+                        <p>Forsberg Racing | Destined Industries Nissan Z</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="64">
+                    <p>3x FD Champion, Nissan Z icon with 70+ podiums.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/ChrisForsberg-vehicle_image.jpg" alt="Chris Forsberg Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/conor-shanahan')"
+                    onmouseenter="show_overlay(79, event)" onmouseleave="hide_overlay(79)">
+                    <div class="driver-number">79</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/ConorShanahan-portrait.png" alt="Conor Shanahan">
+                    <div class="driver-info">
+                        <h3>Conor Shanahan</h3>
+                        <p>Jerry Yang Racing | Red Bull GT Radial JYR Toyota GT86</p>
+                        <span class="country-tag">Ireland</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="79">
+                    <p>Youngest Drift Masters Champion, FD event winner, Red Bull athlete.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/ConorShanahan-vehicle_image.jpg" alt="Conor Shanahan Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/fredric-aasbo')"
+                    onmouseenter="show_overlay(151, event)" onmouseleave="hide_overlay(151)">
+                    <div class="driver-number">151</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/FredricAasbo-portrait.png" alt="Fredric Aasbø">
+                    <div class="driver-info">
+                        <h3>Fredric Aasbø</h3>
+                        <p>Papadakis Racing | Rockstar Energy Toyota GR Supra</p>
+                        <span class="country-tag">Norway</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="151">
+                    <p>3x FD Champion, most winning driver in series history.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/FredricAasbo-vehicle_image.jpg" alt="Fredric Aasbø Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/jack-shanahan')"
+                    onmouseenter="show_overlay(59, event)" onmouseleave="hide_overlay(59)">
+                    <div class="driver-number">59</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/JackShanahan-portrait.png" alt="Jack Shanahan">
+                    <div class="driver-info">
+                        <h3>Jack Shanahan</h3>
+                        <p>59 Racing | Pulsar Turbos BMW E82</p>
+                        <span class="country-tag">Ireland</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="59">
+                    <p>Irish talent, 2025 FD Rookie of the Year, aiming for podiums.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/JackShanahan-vehicle_image.jpg" alt="Jack Shanahan Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/cole-richards')"
+                    onmouseenter="show_overlay(11, event)" onmouseleave="hide_overlay(11)">
+                    <div class="driver-number">11</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/ColeRichards-portrait.png" alt="Cole Richards">
+                    <div class="driver-info">
+                        <h3>Cole Richards</h3>
+                        <p>Richards Racing | Toyota GT86/GR86</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="11">
+                    <p>22-year-old rising star, ProSpec Rookie of the Year, now in Pro.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/ColeRichards-vehicle_image.jpg" alt="Cole Richards Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/aurimas-bakchis')"
+                    onmouseenter="show_overlay(723, event)" onmouseleave="hide_overlay(723)">
+                    <div class="driver-number">723</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/AurimasBakchis-portrait.png" alt="Aurimas Bakchis">
+                    <div class="driver-info">
+                        <h3>Aurimas Bakchis</h3>
+                        <p>Feal Suspension Race Team | GT Radial Subaru BRZ</p>
+                        <span class="country-tag">Lithuania</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="723">
+                    <p>Feal Suspension founder, 11 FD wins, 8x Top-5 overall.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/AurimasBakchis-vehicle_image.jpg" alt="Aurimas Bakchis Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/branden-sorensen')"
+                    onmouseenter="show_overlay(513, event)" onmouseleave="hide_overlay(513)">
+                    <div class="driver-number">513</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/BrandenSorensen-portrait.png" alt="Branden Sorensen">
+                    <div class="driver-info">
+                        <h3>Branden Sorensen</h3>
+                        <p>Sorensen Motorsports | U.S. Air Force BMW</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="513">
+                    <p>Engineer-driver from Las Vegas, blending tech and talent in BMW.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/BrandenSorensen-vehicle_image.jpg" alt="Branden Sorensen Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/diego-higa')"
+                    onmouseenter="show_overlay(169, event)" onmouseleave="hide_overlay(169)">
+                    <div class="driver-number">169</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/DiegoHiga-portrait.png" alt="Diego Higa">
+                    <div class="driver-info">
+                        <h3>Diego Higa</h3>
+                        <p>Higa Motorsport | Toyota GT86</p>
+                        <span class="country-tag">Brazil</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="169">
+                    <p>Brazilian driver competing in FD with Toyota GT86.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/DiegoHiga-vehicle_image.jpg" alt="Diego Higa Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/dylan-hughes')"
+                    onmouseenter="show_overlay(129, event)" onmouseleave="hide_overlay(129)">
+                    <div class="driver-number">129</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/DylanHughes-portrait.png" alt="Dylan Hughes">
+                    <div class="driver-info">
+                        <h3>Dylan Hughes</h3>
+                        <p>Dylan Hughes Racing | Royal Purple BMW 2JZ</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="129">
+                    <p>Fabricator and fan favorite, 6 seasons in FD, top-10 finisher.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/DylanHughes-vehicle_image.jpg" alt="Dylan Hughes Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/ryan-tuerck')"
+                    onmouseenter="show_overlay(411, event)" onmouseleave="hide_overlay(411)">
+                    <div class="driver-number">411</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/RyanTuerck-portrait.png" alt="Ryan Tuerck">
+                    <div class="driver-info">
+                        <h3>Ryan Tuerck</h3>
+                        <p>Papadakis Racing | Rain-X Toyota GR Corolla</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="411">
+                    <p>Social influencer and FD veteran, known for viral builds like GT4586.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/RyanTuerck-vehicle_image.jpg" alt="Ryan Tuerck Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/cody-buchanan')"
+                    onmouseenter="show_overlay(272, event)" onmouseleave="hide_overlay(272)">
+                    <div class="driver-number">272</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/CodyBuchanan-portrait.png" alt="Cody Buchanan">
+                    <div class="driver-info">
+                        <h3>Cody Buchanan</h3>
+                        <p>Buchanan Racing | Toyota GT86 (Rookie)</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="272">
+                    <p>2025 ProSpec Champion, rookie in FD PRO for 2026.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/CodyBuchanan-vehicle_image.jpg" alt="Cody Buchanan Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/connor-osullivan')"
+                    onmouseenter="show_overlay(107, event)" onmouseleave="hide_overlay(107)">
+                    <div class="driver-number">107</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/ConnorO'Sullivan-portrait.png" alt="Connor O'Sullivan">
+                    <div class="driver-info">
+                        <h3>Connor O'Sullivan</h3>
+                        <p>O'Sullivan Motorsports | Nissan Silvia S15</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="107">
+                    <p>Knoxville native, fearless style, top-15 FD rookie in 2025.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/ConnorO'Sullivan-vehicle_image.jpg" alt="Connor O'Sullivan Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/dan-burkett')"
+                    onmouseenter="show_overlay(34, event)" onmouseleave="hide_overlay(34)">
+                    <div class="driver-number">34</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/DanBurkett-portrait.png" alt="Dan Burkett">
+                    <div class="driver-info">
+                        <h3>Dan Burkett</h3>
+                        <p>Burkett Racing | Chevrolet Camaro</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="34">
+                    <p>RAD Industries Supra driver, 2JZ loyalist and parts builder.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/DanBurkett-vehicle_image.jpg" alt="Dan Burkett Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/daniel-stuke')"
+                    onmouseenter="show_overlay(527, event)" onmouseleave="hide_overlay(527)">
+                    <div class="driver-number">527</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/DanielStuke-portrait.png" alt="Daniel Stuke">
+                    <div class="driver-info">
+                        <h3>Daniel Stuke</h3>
+                        <p>Stuke Performance | Nissan 350Z</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="527">
+                    <p>Showman in his 2JZ-powered 240SX, always chasing good vibes.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/DanielStuke-vehicle_image.jpg" alt="Daniel Stuke Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/derek-madison')"
+                    onmouseenter="show_overlay(27, event)" onmouseleave="hide_overlay(27)">
+                    <div class="driver-number">27</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/DerekMadison-portrait.png" alt="Derek Madison">
+                    <div class="driver-info">
+                        <h3>Derek Madison</h3>
+                        <p>Madison Racing | Toyota GR Supra</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="27">
+                    <p>Underdog privateer, ProSpec runner-up in 2022, now PRO contender.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/DerekMadison-vehicle_image.jpg" alt="Derek Madison Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/federico-sceriffo')"
+                    onmouseenter="show_overlay(117, event)" onmouseleave="hide_overlay(117)">
+                    <div class="driver-number">117</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/FedericoSceriffo-portrait.png" alt="Federico Sceriffo">
+                    <div class="driver-info">
+                        <h3>Federico Sceriffo</h3>
+                        <p>FSC Racing | Ferrari 599 GTB</p>
+                        <span class="country-tag">Italy</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="117">
+                    <p>Italian racing driver with a passion for Ferrari vehicles and high-performance driving since 2004.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/FedericoSceriffo-vehicle_image.jpg" alt="Federico Sceriffo Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/hiroya-minowa')"
+                    onmouseenter="show_overlay(168, event)" onmouseleave="hide_overlay(168)">
+                    <div class="driver-number">168</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/HiroyaMinowa-portrait.png" alt="Hiroya Minowa">
+                    <div class="driver-info">
+                        <h3>Hiroya Minowa</h3>
+                        <p>Minowa Drift Team | Toyota GR86</p>
+                        <span class="country-tag">Japan</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="168">
+                    <p>Young Red Bull athlete, FD USA podium finisher, rising star from Japan.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/HiroyaMinowa-vehicle_image.jpg" alt="Hiroya Minowa Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/jeff-jones')"
+                    onmouseenter="show_overlay(818, event)" onmouseleave="hide_overlay(818)">
+                    <div class="driver-number">818</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/JeffJones-portrait.png" alt="Jeff Jones">
+                    <div class="driver-info">
+                        <h3>Jeff Jones</h3>
+                        <p>Jeff Jones Racing | Nissan 370Z</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="818">
+                    <p>FD veteran since 2009, HOTPIT Autofest founder, multiple podiums.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/JeffJones-vehicle_image.jpg" alt="Jeff Jones Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/jhonnattan-castro')"
+                    onmouseenter="show_overlay(17, event)" onmouseleave="hide_overlay(17)">
+                    <div class="driver-number">17</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/JhonnattanCastro-portrait.png" alt="Jhonnattan Castro">
+                    <div class="driver-info">
+                        <h3>Jhonnattan Castro</h3>
+                        <p>Castro Motorsports | Toyota GR Supra</p>
+                        <span class="country-tag">Dominican Republic</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="17">
+                    <p>First Dominican FD pro, 5x national champion, breaking barriers since 2012.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/JhonnattanCastro-vehicle_image.jpg" alt="Jhonnattan Castro Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/ken-gushi')"
+                    onmouseenter="show_overlay(21, event)" onmouseleave="hide_overlay(21)">
+                    <div class="driver-number">21</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/KenGushi-portrait.png" alt="Ken Gushi">
+                    <div class="driver-info">
+                        <h3>Ken Gushi</h3>
+                        <p>Gushi Racing | Toyota GR Supra</p>
+                        <span class="country-tag">Japan</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="21">
+                    <p>LA-based Japanese driver, veteran in GR86/GR Supra competition.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/KenGushi-vehicle_image.jpg" alt="Ken Gushi Car">
+                </div>
+
+                <div class="driver-card"
+                    onclick="do_redirect('https://www.formulad.com/drivers/nate-chen')"
+                    onmouseenter="show_overlay(4, event)" onmouseleave="hide_overlay(4)">
+                    <div class="driver-number">4</div>
+                    <img src="https://www.formulad.com/storage/2026/drivers/NateChen-portrait.png" alt="Nate Chen">
+                    <div class="driver-info">
+                        <h3>Nate Chen</h3>
+                        <p>Chen Racing | Nissan 240SX (Rookie)</p>
+                        <span class="country-tag">USA</span>
+                    </div>
+                </div>
+                <div class="driver-overlay" id="4">
+                    <p>2025 ProSpec runner-up, rookie in FD PRO 2026 with Jerry Yang Racing.</p>
+                    <img src="https://www.formulad.com/storage/2026/vehicle/NateChen-vehicle_image.jpg" alt="Nate Chen Car">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="driver-grid">
+            <p>
+            &copy; 2026 Nyoman, Raden. This project's source code is licensed under GPLv3.<br>
+            External media (images, videos) are courtesy of Formula Drift Holdings LLC and remain their property. All rights reserved.
+            </p>
+            <div class="fd-socials">
+                <p>Follow Formula Drift:</p>
+                <a href="https://www.instagram.com/formulad" target="_blank">Instagram</a> |
+                <a href="https://www.facebook.com/formulad" target="_blank">Facebook</a> |
+                <a href="https://twitter.com/FormulaDrift" target="_blank">Twitter/X</a> |
+                <a href="https://www.youtube.com/@formuladrift" target="_blank">YouTube</a> |
+                <a href="https://www.tiktok.com/@formulad_official" target="_blank">TikTok</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

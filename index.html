@@ -1,0 +1,152 @@
+<!--
+    Formula Drift Fan Project, (C) 2026 Nyoman Raden
+    This webpage is "free software": you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This webpage is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this webpage source. If not, see <https://www.gnu.org/licenses/>.
+
+    External media (images, videos) are courtesy of Formula Drift Holdings LLC
+    and remain their property. All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Drift - Homepage</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio" rel="stylesheet"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button id="menu-toggle">☰</button>
+    <header>
+        <nav>
+            <img src="https://www.formulad.com/images/assets/logo.svg" alt="Formula Drift Logo"/>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a onclick="do_redirect(this.href)" href="drivers.html">Drivers</a></li>
+                <li><a onclick="do_redirect(this.href)" href="events.html">Events</a></li>
+                <li><a onclick="do_redirect(this.href)" href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="video-background">
+                <iframe 
+                src="https://www.youtube.com/embed/PeyJFZBdwXs?autoplay=1&mute=1&loop=1&playlist=PeyJFZBdwXs&controls=0&showinfo=0&modestbranding=1"
+                frameborder="0"
+                allow="autoplay; fullscreen"
+                allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="overlay">
+                <h1 class="page-title nomargin">Formula Drift</h1>
+                <p class="section-text nomargin">The premier motorsport of drifting.</p>
+            </div>
+        </section>
+
+        <div class="full-spacer hero-spacer"></div>
+
+        <section class="padding dark-section" id="welcome">
+            <div class="content-box">
+                <h2 class="section-title">WELCOME TO THE FAN PROJECT</h2>
+                <p class="section-text">
+                    Dive into the world of Formula Drift <a href="#fd-overview">here</a>. Explore driver profiles and event histories. Discover the culture and passion behind the smoke. This is your hub for all things Formula Drift.
+                </p>
+            </div>
+        </section>
+
+        <section class="full-spacer dark-section"></section>
+
+        <section class="padding dark-section" id="fd-overview">
+            <div class="content-box">
+                <h2 class="section-title">WHAT IS FORMULA DRIFT?</h2>
+                <p class="section-text">
+                    Formula Drift is the premier professional drifting series in the United States, founded in 2004. 
+                    It brings together the best drivers, cars, and fans to celebrate the art of controlled oversteer. 
+                    With events across the country, FD has grown into a global motorsport phenomenon that millions favored worldwide.
+                </p>
+            </div>
+        </section>
+
+        <section class="spacer dark-section"></section>
+
+        <section class="padding dark-section" id="fd-history">
+            <div class="content-box">
+                <h2 class="section-title">A BRIEF HISTORY</h2>
+                <p class="section-text">
+                    Formula Drift was founded by Jim Liaw in 2004, evolving from grassroots drifting events into a professional series. 
+                    The first season featured 8 events and quickly gained popularity for its unique blend of motorsport and car culture. 
+                    Over the years, FD has expanded to include multiple classes, international events, and a growing fanbase that celebrates the skill and style of drifting.
+                </p>
+            </div>
+        </section>
+
+        <section class="spacer dark-section"></section>
+
+        <section class="padding dark-section" id="eventlist">
+            <div class="padding">
+                <h2 class="section-title">UPCOMING EVENTS</h2>
+                <div class="driver-grid">
+                    <div class="driver-card" onclick="do_redirect('https://www.formulad.com/schedule/2026/orlando')">
+                        <img src="https://www.formulad.com/storage/events/January2026/fd2026-thumbnail-orl.jpg" alt="Orlando Event">
+                        <div class="driver-info">
+                            <h3>Round 3: Scorched</h3>
+                            <p>Location: Orlando, Florida, USA</p>
+                            <p>Dates: May 29 - May 30, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="driver-card" onclick="do_redirect('https://www.formulad.com/schedule/2026/stafford')">
+                        <img src="https://www.formulad.com/storage/events/January2026/fd2026-thumbnail-stafford.jpg" alt="Stafford Event">
+                        <div class="driver-info">
+                            <h3>Round 4: Battle at the Springs</h3>
+                            <p>Location: Stafford, Connecticut, USA</p>
+                            <p>Dates: Jun 18 - Jun 20, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="driver-card" onclick="do_redirect('https://www.formulad.com/schedule/2026/indianapolis')">
+                        <img src="https://www.formulad.com/storage/events/January2026/fd2026-thumbnail-ind.jpg" alt="Indianapolis Event">
+                        <div class="driver-info">
+                            <h3>Round 5: Midwest Mayhem</h3>
+                            <p>Location: Indianapolis, Indiana, USA</p>
+                            <p>Dates: Jul 30 - Aug 01, 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="driver-grid">
+            <p>
+            &copy; 2026 Nyoman, Raden. This project's source code is licensed under GPLv3.<br>
+            External media (images, videos) are courtesy of Formula Drift Holdings LLC and remain their property. All rights reserved.
+            </p>
+            <div class="fd-socials">
+                <p>Follow Formula Drift:</p>
+                <a href="https://www.instagram.com/formulad" target="_blank">Instagram</a> |
+                <a href="https://www.facebook.com/formulad" target="_blank">Facebook</a> |
+                <a href="https://twitter.com/FormulaDrift" target="_blank">Twitter/X</a> |
+                <a href="https://www.youtube.com/@formuladrift" target="_blank">YouTube</a> |
+                <a href="https://www.tiktok.com/@formulad_official" target="_blank">TikTok</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
