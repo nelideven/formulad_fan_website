@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Smooth page transition logic
 function do_redirect(href) {
     event.preventDefault(); // prevent default link behavior
     document.body.style.opacity = 0; // fade out effect
@@ -79,6 +80,7 @@ function do_redirect(href) {
     }, 500); // match the CSS transition duration
 }
 
+// Overlay logic for driver bios
 function show_overlay(driver_id, event) {
     if (is_touch) { return; } // disable overlay on touchscreen devices
     const overlay = document.getElementById(driver_id);
@@ -96,7 +98,6 @@ function show_overlay(driver_id, event) {
         overlay.style.left = e.clientX + 5 + "px";
     });
 }
-
 function hide_overlay(driver_id) {
     if (is_touch) { return; } // disable overlay on touchscreen devices
     const overlay = document.getElementById(driver_id);
