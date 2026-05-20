@@ -16,7 +16,10 @@
     External media (images, videos) are courtesy of Formula Drift Holdings LLC
     and remain their property. All rights reserved.
 */
+
+// Determines if the device is a touchscreen to disable hover-based overlays, as they don't work well on touchscreens
 const is_touch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
 
 document.addEventListener("DOMContentLoaded", () => {
     /* Section fade-in/out logic */
@@ -40,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sections.forEach(section => observer_in.observe(section));
     sections.forEach(section => observer_out.observe(section));
+
 
     /* Navbar hide/show logic */
     const header = document.querySelector("header");
@@ -107,4 +111,40 @@ function hide_overlay(driver_id) {
 
     // Remove mousemove listener when leaving
     overlay.parentElement.removeEventListener("mousemove", () => {});
+}
+
+// Momentum scroll for mechanical mouse wheel on desktop
+let momentum = 0;
+let isAnimating = false;
+
+window.addEventListener("wheel", (scwheel) => {
+    if (scwheel.deltaY === 0) { return; } // ignore horizontal scroll
+    if (-60 < scwheel.deltaY && scwheel.deltaY < 60) { return; } // ignore small scrolls (likely touchpad/optical mouse wheel)
+    else {
+        momentum += scwheel.deltaY; // add scroll delta
+
+        // restart animation if not already running
+        if (!isAnimating) {
+            animate_scroll();
+        }
+    }
+});
+
+function animate_scroll() {
+    isAnimating = true;
+
+    // apply momentum
+    window.scrollBy(0, momentum);
+
+    // decay momentum (friction)
+    momentum *= 0.967; // .967, the perfect decay factor as we experimented, which also mentions about the 67 joke
+
+    // keep animating until momentum is tiny
+    if (Math.abs(momentum) > 0.1) {
+        requestAnimationFrame(animate_scroll);
+    } else {
+        // stop animation cleanly
+        isAnimating = false;
+        momentum = 0;
+    }
 }
