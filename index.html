@@ -31,7 +31,7 @@
     <button id="menu-toggle">☰</button>
     <header>
         <nav>
-            <img src="https://www.formulad.com/images/assets/logo.svg" alt="Formula Drift Logo"/>
+            <img src="https://www.formulad.com/fd-logo-white.svg" alt="Formula Drift Logo"/>
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a onclick="do_redirect(this.href)" href="drivers.html">Drivers</a></li>
@@ -45,7 +45,7 @@
         <section class="hero">
             <div class="video-background">
                 <iframe 
-                src="https://www.youtube.com/embed/PeyJFZBdwXs?autoplay=1&mute=1&loop=1&playlist=PeyJFZBdwXs&controls=0&showinfo=0&modestbranding=1"
+                src="https://www.youtube.com/embed/th2l4tyizj4?autoplay=1&mute=1&loop=1&playlist=th2l4tyizj4&controls=0&showinfo=0&modestbranding=1"
                 frameborder="0"
                 allow="autoplay; fullscreen"
                 allowfullscreen>
@@ -54,7 +54,7 @@
 
             <div class="overlay">
                 <h1 class="page-title nomargin">Formula Drift</h1>
-                <p class="section-text nomargin">The premier motorsport of drifting.</p>
+                <p class="section-text nomargin" id="typewriter_index"></p>
             </div>
         </section>
 
@@ -84,11 +84,25 @@
 
         <section class="spacer dark-section"></section>
 
+        <section class="padding dark-section" id="fdfan-overview">
+            <div class="content-box">
+                <h2 class="section-title">WHAT ABOUT US??</h2>
+                <p class="section-text">
+                    The Formula Drift Fan Project is a non-profit, open-source hub built by fans to showcase the sport of drifting. 
+                    From the culture that fuels it, to the drivers who define it, and the events that keep the smoke rolling, this project we made shows Formula Drift in all its glory. 
+                    Whether you're here to learn what drifting is, explore driver profiles, or relive recent battles, you're part of the community that cares (which we do too).
+                    <strong>We frequently update the site with new content, and you can contribute too</strong>, so check back often for the latest news and highlights from the world of Formula Drift.
+                </p>
+            </div>
+        </section>
+
+        <section class="spacer dark-section"></section>
+
         <section class="padding dark-section" id="fd-history">
             <div class="content-box">
                 <h2 class="section-title">A BRIEF HISTORY</h2>
                 <p class="section-text">
-                    Formula Drift was founded by Jim Liaw in 2004, evolving from grassroots drifting events into a professional series. 
+                    Formula Drift was founded by Jim Liaw in 2004, from grassroots drifting events into a professional series. 
                     The first season featured 8 events and quickly gained popularity for its unique blend of motorsport and car culture. 
                     Over the years, FD has expanded to include multiple classes, international events, and a growing fanbase that celebrates the skill and style of drifting.
                 </p>
@@ -101,17 +115,8 @@
             <div class="padding">
                 <h2 class="section-title">UPCOMING EVENTS</h2>
                 <div class="driver-grid">
-                    <div class="driver-card" onclick="do_redirect('https://www.formulad.com/schedule/2026/orlando')">
-                        <img src="https://www.formulad.com/storage/events/January2026/fd2026-thumbnail-orl.jpg" alt="Orlando Event">
-                        <div class="driver-info">
-                            <h3>Round 3: Scorched</h3>
-                            <p>Location: Orlando, Florida, USA</p>
-                            <p>Dates: May 29 - May 30, 2026</p>
-                        </div>
-                    </div>
-
                     <div class="driver-card" onclick="do_redirect('https://www.formulad.com/schedule/2026/stafford')">
-                        <img src="https://www.formulad.com/storage/events/January2026/fd2026-thumbnail-stafford.jpg" alt="Stafford Event">
+                        <img src="https://www.formulad.com/api/media/file/stf-thumb.jpg" alt="Stafford Event">
                         <div class="driver-info">
                             <h3>Round 4: Battle at the Springs</h3>
                             <p>Location: Stafford, Connecticut, USA</p>
@@ -120,7 +125,7 @@
                     </div>
 
                     <div class="driver-card" onclick="do_redirect('https://www.formulad.com/schedule/2026/indianapolis')">
-                        <img src="https://www.formulad.com/storage/events/January2026/fd2026-thumbnail-ind.jpg" alt="Indianapolis Event">
+                        <img src="https://www.formulad.com/api/media/file/ind-thumb.jpg" alt="Indianapolis Event">
                         <div class="driver-info">
                             <h3>Round 5: Midwest Mayhem</h3>
                             <p>Location: Indianapolis, Indiana, USA</p>
@@ -136,7 +141,8 @@
         <div class="driver-grid">
             <p>
             &copy; 2026 Nyoman, Raden. This project's source code is licensed under GPLv3.<br>
-            External media (images, videos) are courtesy of Formula Drift Holdings LLC and remain their property. All rights reserved.
+            External media (images, videos) are courtesy of Formula Drift Holdings LLC and remain their property. All rights reserved.<br>
+            Website source is in the <a href="https://github.com/nelideven/formulad_fan_website" target="_blank">GitHub</a> repository.
             </p>
             <div class="fd-socials">
                 <p>Follow Formula Drift:</p>
@@ -145,6 +151,7 @@
                 <a href="https://twitter.com/FormulaDrift" target="_blank">Twitter/X</a> |
                 <a href="https://www.youtube.com/@formuladrift" target="_blank">YouTube</a> |
                 <a href="https://www.tiktok.com/@formulad_official" target="_blank">TikTok</a>
+                <p>We are open to suggestions! You can reach out to us fans from <a href="https://www.instagram.com/formula.drift.fanweb/" target="_blank">here</a>!</p>
             </div>
         </div>
     </footer>

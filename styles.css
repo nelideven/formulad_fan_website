@@ -86,7 +86,7 @@ nav {
     align-items: center;
 }
 
-nav img { margin-left: 20px; width: 10%; filter: invert(1); }
+nav img { margin-left: 20px; width: 10%; }
 
 nav ul {
     display: flex;
@@ -186,9 +186,9 @@ a:hover { color: #1febdd; }
 }
 
 .driver-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
     border-color: #1febdd;
-    box-shadow: 0 10px 30px rgba(31,235,221,0.2);
 }
 
 .driver-card img {

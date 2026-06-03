@@ -70,6 +70,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
         last_scroll = current_scroll;
     });
+
+    /* Typewriter effect logic for homepage hero section */
+    const typewriter_index = document.getElementById("typewriter_index");
+    const texts = [
+        "Welcome to the Ultimate Formula Drift Fan Hub!",
+        "Your go-to source for all things Formula Drift.",
+        "Scroll down ⤵"
+    ];
+
+    let textIndex = 0;
+    let charIndex = 0;
+
+    function typewriter() {
+        if (charIndex < texts[textIndex].length) {
+            typewriter_index.textContent += texts[textIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typewriter, 50); // typing speed (ms per char)
+        } else {
+            // pause before deleting
+            setTimeout(deletewriter, 1500);
+        }
+    }
+
+    function deletewriter() {
+        if (charIndex > 0) {
+            typewriter_index.textContent = texts[textIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(deletewriter, 25); // deleting speed
+        } else {
+            // move to next text
+            textIndex = (textIndex + 1) % texts.length;
+            setTimeout(typewriter, 500);
+        }
+    }
+
+    // start effect
+    typewriter();
+
 });
 
 // Smooth page transition logic
